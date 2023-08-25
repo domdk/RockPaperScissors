@@ -1,0 +1,57 @@
+<!-- Tutorial online using Web Dev Simplified - https://github.com/WebDevSimplified-->
+<!-- images - <a href="https://www.freepik.com/free-vector/hand-wrist-gesture-black-engraving-icon-set-with-thumb-up-down-fist-middle-finger-other-gestures-vector-illustration_26766099.htm#query=hand%20signs&position=0&from_view=search&track=ais">Image by macrovector</a> on Freepik -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors | Devil Dog Design</title>
+    <link rel="icon" type="image/x-icon" href="images/dd site icon.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <h1>Rock-Paper-Scissors</h1>
+        <div class="container">
+            <div class="selections">
+                <button class="selection" data-selection="rock"><img src="images/Y_ROCK.png" alt=""></button>
+                <button class="selection" data-selection="paper"><img src="images/Y_PAPER.png" alt=""></button>
+                <button class="selection" data-selection="scissors"><img src="images/Y_SCISSORS.png" alt=""></button>
+
+            </div>
+
+            <div class="results">
+                <div>
+                    You
+                    <span id="yourScore" class="resultScore" data-your-score>0</span>
+                </div>
+                <div>
+                    Computer
+                    <span id="computerScore" class="resultScore" data-computer-score>0</span>
+                </div>
+                <div></div>
+                <div id="lastColumn" data-final-column></div>
+            </div>
+        </div>
+        <button class="reset">reset</button>
+    </main>
+    <footer>
+        <p class="contact"> <a href="mailto:dom@devildog.co.za"> email | dom@devildog.co.za</a> </p>
+        <p class="attribution"><a
+                href="https://www.freepik.com/free-vector/hand-wrist-gesture-black-engraving-icon-set-with-thumb-up-down-fist-middle-finger-other-gestures-vector-illustration_26766099.htm#query=hand%20signs&position=0&from_view=search&track=ais">Images
+                by macrovector</a> on Freepik</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
